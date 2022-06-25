@@ -7,14 +7,14 @@
 }
 a {
   text-decoration: none;
-  font-size: 16px;
-  color: #242424;
   font-weight: 700;
 }
 li {
   list-style-type: none;
 }
-
+button{
+    cursor: pointer;
+}
 #about-page {
   background-color: #e5e5e5;
   min-height: 100vh;
@@ -46,9 +46,18 @@ nav {
 }
 .nav-link {
   margin: 0 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 150ms ease-in-out;
+  font-size: 16px;
 }
+.nav-link-anchor {
+  color: #242424;
+}
+
 .fa-adjust {
-  font-size: 20px;
+  font-size: 32px;
 }
 
 /*
@@ -89,8 +98,9 @@ Header
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 100%;
+  border-radius: 50%;
   margin-right: 16px;
+  transition: all 150ms ease-in-out;
 }
 .header-link-anchor {
   color: white;
@@ -100,4 +110,28 @@ Header
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.icon-click:hover {
+  transform: scale(1.15);
+}
+.icon-click:active {
+  transform: scale(0.8);
+}
+.mail-button {
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #242424;
+  position: absolute;
+  bottom: 32px;
+  right: 40px;
+}
+.mail-button-anchor{
+    font-size: 40px;
+}
+.fa-envelope{
+    color: white;
+    padding: 12px;
 }
