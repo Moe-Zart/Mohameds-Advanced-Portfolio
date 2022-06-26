@@ -143,10 +143,6 @@ nav {
 .logo-harsh {
   z-index: 1;
 }
-.logo-soft {
-  transition: ;
-}
-
 .nav-links,
 .header-links {
   display: flex;
@@ -522,7 +518,7 @@ Projects
 */
 
 #projects {
-  background-color: rgb(244, 244, 244);
+  background-color: rgb(255, 255, 255);
 }
 .project-title {
   text-align: center;
