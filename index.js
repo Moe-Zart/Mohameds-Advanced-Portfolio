@@ -1,7 +1,9 @@
 let contrastToggle = false;
-function toggleContrast(){
-    contrastToggle = !contrastToggle;
-    contrastToggle ? document.body.classList += " dark-theme" : document.body.classList.remove("dark-theme")
+function toggleContrast() {
+  contrastToggle = !contrastToggle;
+  contrastToggle
+    ? (document.body.classList += " dark-theme")
+    : document.body.classList.remove("dark-theme");
 }
 function contact(event) {
   event.preventDefault(); //this just removes the default form settings

@@ -197,6 +197,7 @@ Header
   width: 100%;
   max-width: 1000px;
   padding: 0 30px;
+  z-index: 100;
 }
 .text-blue {
   color: rgb(29, 205, 205);
@@ -534,15 +535,15 @@ Projects
   transition: 450ms ease;
   z-index: 2;
 }
+.project {
+  padding: 60px 0;
+}
 .project:hover .project-wrapper:before {
   opacity: 0.7;
 }
 .project:hover .project-img {
   transform: scale(1.07);
   filter: blur(5px);
-}
-.project-list {
-  padding: 40px 0;
 }
 .project:hover .project-description {
   opacity: 1;
@@ -556,7 +557,7 @@ Projects
   max-width: 550px;
   opacity: 0;
   z-index: 3;
-  transition: 450ms, 300ms;
+  transition: 500ms;
 }
 h3,
 h4,
@@ -624,4 +625,82 @@ footer {
 .footer-logo-container:hover .footer-logo-top {
   transform: translateX(60px);
   opacity: 1;
+}
+/*
+shapes
+*/
+.shape{
+  position: fixed;
+}
+.shape-0{
+  top: 10vh;
+  left: 15vw;
+}
+.shape-1{
+  top: 10vh;
+  left: 45vw;
+}
+.shape-2{
+  top: 10vh;
+  left: 75vw;
+}
+.shape-3{
+  top: 25vh;
+  left: 5vw;
+}
+.shape-4{
+  top: 25vh;
+  left: 55vw;
+}
+.shape-5{
+  top: 25vh;
+  left: 85vw;
+}
+.shape-6{
+  top: 40vh;
+  left: 15vw;
+}
+.shape-7{
+  top: 40vh;
+  left: 45vw;
+}
+.shape-8{
+  top: 40vh;
+  left: 75vw;
+}
+.shape-9{
+  top: 55vh;
+  left: 5vw;
+}
+.shape-10{
+  top: 55vh;
+  left: 55vw;
+}
+.shape-11{
+  top: 55vh;
+  left: 85vw;
+}
+.shape-12{
+  top: 70vh;
+  left: 15vw;
+}
+.shape-13{
+  top: 70vh;
+  left: 45vw;
+}
+.shape-14{
+  top: 70vh;
+  left: 75vw;
+}
+.shape-15{
+  top: 85vh;
+  left: 5vw;
+}
+.shape-16{
+  top: 85vh;
+  left: 55vw;
+}
+.shape-17{
+  top: 85vh;
+  left: 85vw;
 }
