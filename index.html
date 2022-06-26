@@ -11,14 +11,15 @@
       crossorigin="anonymous"
     ></script>
     <script src="index.js"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("nD4fLAT5iuBGNb9-z");
-   })();
-</script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("nD4fLAT5iuBGNb9-z");
+      })();
+    </script>
   </head>
   <body>
     <section id="about-page">
@@ -28,17 +29,29 @@
         </figure>
         <ul class="nav-links">
           <li class="nav-link">
-            <a href="#" class="nav-link-anchor nav-link-hover">About</a>
+            <a
+              href="#"
+              class="nav-link-anchor nav-link-hover"
+              onclick="toggleModal()"
+              >About</a
+            >
           </li>
           <li class="nav-link">
-            <a href="#" class="nav-link-anchor nav-link-hover">Projects</a>
+            <a href="#projects" class="nav-link-anchor nav-link-hover"
+              >Projects</a
+            >
           </li>
           <li class="nav-link">
-            <a href="#" class="nav-link-anchor nav-link-hover">Contact</a>
+            <a
+              href="#"
+              class="nav-link-anchor nav-link-hover"
+              onclick="toggleModal()"
+              >Contact</a
+            >
           </li>
           <li class="nav-link icon-click">
             <a href="#" class="nav-link-anchor"
-              ><i class="fas fa-adjust"></i
+              ><i class="fas fa-adjust" onclick="toggleContrast()"></i
             ></a>
           </li>
         </ul>
@@ -58,7 +71,12 @@
             convenience to positively impact the world.
           </p>
           <p class="header-description">
-            Here's abit more <span class="text-blue">about me</span>.
+            Here's abit more
+            <span class="text-blue"
+              ><a class="header-aboutMe" onclick="toggleModal()"
+                >about me</a
+              > </span
+            >.
           </p>
 
           <ul class="header-links">
@@ -89,10 +107,8 @@
           </ul>
         </div>
       </header>
-      <button class="mail-button icon-click">
-        <a href="#" target="_blank" class="mail-button-anchor"
-          ><i class="fas fa-envelope mail"></i
-        ></a>
+      <button class="mail-button icon-click" onclick="toggleModal()">
+        <i class="fas fa-envelope mail"></i>
       </button>
       <a href="#projects" class="scroll">
         <div class="scroll-icon icon-click">
@@ -158,6 +174,7 @@
           </div>
         </div>
         <div class="modal-half right">
+          <i class="fas fa-times icon-click" onclick="toggleModal()"></i>
           <h3 class="modal-title right-title">Let's have a chat!</h3>
           <h4 class="modal-subtitle right-subtitle">
             I'm currently open to new opportunities
@@ -191,7 +208,6 @@
             Thanks for the message! Looking forward to speaking to you soon!
           </div>
         </div>
-        <i class="fas fa-times icon-click"></i>
       </div>
     </section>
     <section id="projects">

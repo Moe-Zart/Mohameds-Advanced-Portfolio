@@ -67,6 +67,10 @@ input:hover,
 textarea:hover {
   border-color: rgb(144, 187, 187);
 }
+.dark-theme #about-page,
+.dark-theme #projects{
+  background-color: #1a1a1a;
+}
 /*
 Navigation
 */
@@ -125,6 +129,20 @@ nav {
 .fa-adjust {
   font-size: 32px;
 }
+nav,
+.scroll,
+.header {
+  visibility: visible;
+  opacity: 1;
+  transition: all 600ms 700ms;
+}
+.modal-open nav,
+.modal-open .scroll,
+.modal-open .header {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 400ms;
+}
 
 /*
 Header
@@ -153,6 +171,13 @@ Header
   font-size: 24px;
   line-height: 2;
   max-width: 700px;
+}
+.header-aboutMe {
+  transition: all 250ms ease;
+}
+.header-aboutMe:hover {
+  cursor: pointer;
+  opacity: 0.5;
 }
 .header-links {
   padding: 16px 0;
@@ -209,11 +234,11 @@ Header
   align-items: center;
 }
 .icon-click {
-  transition: all 150ms ease-in-out;
+  transition: all 100ms ease-in-out;
   cursor: pointer;
 }
 .icon-click:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
 }
 .icon-click:active {
   transform: scale(0.8);
@@ -229,12 +254,11 @@ Header
   bottom: 32px;
   right: 40px;
 }
-.mail-button-anchor {
-  font-size: 40px;
-}
+
 .fa-envelope {
   color: white;
-  padding: 12px;
+
+  font-size: 40px;
 }
 .scroll {
   position: absolute;
@@ -273,11 +297,25 @@ Modal
   width: 90%;
   max-width: 1100px;
   height: 700px;
-  box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
   display: flex;
   border-radius: 20px;
   overflow: hidden;
+  visibility: hidden;
+  z-index: -1;
+  transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
 }
+.modal-open .modal {
+  z-index: 60;
+  box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
+  visibility: visible;
+}
+.modal-open .left,
+.modal-open .right {
+  transform: translateX(0%);
+}
+
+/* ^ created for javascript to open the modal
+*/
 .modal-half {
   width: 50%;
   padding: 40px 72px;
@@ -287,6 +325,8 @@ Modal
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transform: translateX(-110%);
+  transition: all 400ms ease-in;
 }
 .right {
   background-color: #242424;
@@ -295,6 +335,8 @@ Modal
   flex-direction: column;
   justify-content: center;
   position: relative;
+  transform: translateX(110%);
+  transition: all 400ms ease-in;
 }
 .modal-title {
   font-size: 28px;
@@ -375,7 +417,7 @@ Modal
   top: 0;
   width: 100%;
   height: 100%;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -385,8 +427,9 @@ Modal
   background-color: #242424;
   font-size: 120px;
 }
-.modal-visible{ 
+.modal-visible {
   z-index: 1;
+  display: flex;
 }
 /*The above modal-visible is a new class only accessed in the javascript
 */

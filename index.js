@@ -1,11 +1,12 @@
-//template_9v0sfon
-//service_ih6hlee
-//nD4fLAT5iuBGNb9-z
-
+let contrastToggle = false;
+function toggleContrast(){
+    contrastToggle = !contrastToggle;
+    contrastToggle ? document.body.classList += " dark-theme" : document.body.classList.remove("dark-theme")
+}
 function contact(event) {
   event.preventDefault(); //this just removes the default form settings
-  const loading = document.querySelector('.modal-loading'); //access the loading class from html
-  const success = document.querySelector('.modal-success'); //access the success class from html
+  const loading = document.querySelector(".modal-loading"); //access the loading class from html
+  const success = document.querySelector(".modal-success"); //access the success class from html
   loading.classList += " modal-visible"; //this makes the modal-loading class have the properties of the modal-visible class, which is z index:1 .(note: the space is important)
   emailjs
     .sendForm(
@@ -13,7 +14,8 @@ function contact(event) {
       "template_9v0sfon",
       event.target,
       "nD4fLAT5iuBGNb9-z"
-    ).then(() => {
+    )
+    .then(() => {
       loading.classList.remove("modal-visible"); //this removes the modal-visible properties from the modal-loading class, so it is back at z-index:-1
       success.classList += " modal-visible"; //this makes the modal-success class have the properties of the modal-visible class, which is z index:1
     })
@@ -23,4 +25,13 @@ function contact(event) {
         "The email service is temporarily unavailable. Please contact me directly on mohamedzreika03@gmail.com"
       );
     });
+}
+let isModalOpen = false;
+function toggleModal() {
+  if (isModalOpen) {
+    isModalOpen = false;
+    return document.body.classList.remove("modal-open");
+  }
+  isModalOpen = true;
+  document.body.classList += " modal-open";
 }
