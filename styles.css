@@ -92,7 +92,7 @@ textarea:hover {
   color: #242424;
 }
 .dark-theme #logo-nav {
-  filter: invert(0);
+  filter: none;
 }
 #about-page,
 #projects,
@@ -109,7 +109,7 @@ textarea:hover {
 .github,
 .resume,
 #logo-nav {
-  transition: all 400ms ease-in-out;
+  transition: all 450ms ease-in-out;
 }
 
 /*
