@@ -68,9 +68,50 @@ textarea:hover {
   border-color: rgb(144, 187, 187);
 }
 .dark-theme #about-page,
-.dark-theme #projects{
+.dark-theme #projects {
   background-color: #1a1a1a;
 }
+.dark-theme .header-title,
+.dark-theme .header-description,
+.dark-theme .nav-link-anchor,
+.dark-theme .scroll-icon,
+.dark-theme .project-title,
+.dark-theme .header-links {
+  color: white;
+  border-color: white;
+}
+.dark-theme .mail-button,
+.dark-theme .nav-link-hover:after,
+.dark-theme .fa-envelope {
+  background-color: white;
+  color: #242424;
+}
+.dark-theme .fa-linkedin-in,
+.dark-theme .github,
+.dark-theme .resume {
+  color: #242424;
+}
+.dark-theme #logo-nav {
+  filter: invert(0);
+}
+#about-page,
+#projects,
+.header-title,
+.header-description,
+.nav-link-anchor,
+.scroll-icon,
+.project-title,
+.header-links,
+.mail-button,
+.nav-link-hover:after,
+.fa-envelope,
+.fa-linkedin-in,
+.github,
+.resume,
+#logo-nav {
+  transition: all 400ms ease-in-out;
+}
+
 /*
 Navigation
 */
