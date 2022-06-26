@@ -379,11 +379,17 @@ Modal
   justify-content: center;
   align-items: center;
   position: absolute;
+  z-index: -1;
 }
 .modal-loading {
   background-color: #242424;
   font-size: 120px;
 }
+.modal-visible{ 
+  z-index: 1;
+}
+/*The above modal-visible is a new class only accessed in the javascript
+*/
 .fa-spinner {
   animation: spin 700ms infinite linear;
 }
@@ -408,6 +414,7 @@ Modal
   top: 30px;
   font-size: 36px;
   z-index: 100;
+  color: white;
 }
 
 /*
