@@ -23,7 +23,7 @@ h1 {
 }
 
 #about-page {
-  background-color: #e5e5e5;
+  background-color: #ffffff;
   min-height: 100vh;
 }
 .row {
@@ -94,6 +94,9 @@ textarea:hover {
 .dark-theme #logo-nav {
   filter: none;
 }
+.dark-theme .logo-soft {
+  z-index: 2;
+}
 #about-page,
 #projects,
 .header-title,
@@ -108,6 +111,7 @@ textarea:hover {
 .fa-linkedin-in,
 .github,
 .resume,
+.logo-soft,
 #logo-nav {
   transition: all 450ms ease-in-out;
 }
@@ -125,13 +129,24 @@ nav {
   height: 100px;
   margin: 0 auto;
   padding: 0 20px;
+  position: relative;
 }
+
 #logo-nav {
   filter: invert(1);
   height: 100px;
   width: 100px;
   margin: 0 24px;
+  position: absolute;
+  top: 0;
 }
+.logo-harsh {
+  z-index: 1;
+}
+.logo-soft {
+  transition: ;
+}
+
 .nav-links,
 .header-links {
   display: flex;
@@ -629,78 +644,120 @@ footer {
 /*
 shapes
 */
-.shape{
+.shape {
   position: fixed;
 }
-.shape-0{
+.shape-0 {
   top: 10vh;
   left: 15vw;
 }
-.shape-1{
+.shape-1 {
   top: 10vh;
   left: 45vw;
 }
-.shape-2{
+.shape-2 {
   top: 10vh;
   left: 75vw;
 }
-.shape-3{
+.shape-3 {
   top: 25vh;
   left: 5vw;
 }
-.shape-4{
+.shape-4 {
   top: 25vh;
   left: 55vw;
 }
-.shape-5{
+.shape-5 {
   top: 25vh;
   left: 85vw;
 }
-.shape-6{
+.shape-6 {
   top: 40vh;
   left: 15vw;
 }
-.shape-7{
+.shape-7 {
   top: 40vh;
   left: 45vw;
 }
-.shape-8{
+.shape-8 {
   top: 40vh;
   left: 75vw;
 }
-.shape-9{
+.shape-9 {
   top: 55vh;
   left: 5vw;
 }
-.shape-10{
+.shape-10 {
   top: 55vh;
   left: 55vw;
 }
-.shape-11{
+.shape-11 {
   top: 55vh;
   left: 85vw;
 }
-.shape-12{
+.shape-12 {
   top: 70vh;
   left: 15vw;
 }
-.shape-13{
+.shape-13 {
   top: 70vh;
   left: 45vw;
 }
-.shape-14{
+.shape-14 {
   top: 70vh;
   left: 75vw;
 }
-.shape-15{
+.shape-15 {
   top: 85vh;
   left: 5vw;
 }
-.shape-16{
+.shape-16 {
   top: 85vh;
   left: 55vw;
 }
-.shape-17{
+.shape-17 {
   top: 85vh;
   left: 85vw;
+}
+.twinkle {
+  animation: glisten 700ms infinite alternate-reverse;
+}
+@keyframes glisten {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.t2 {
+  animation-delay: 200ms;
+}
+.t3 {
+  animation-delay: 1200ms;
+}
+.t4 {
+  animation-delay: 800ms;
+}
+.t5 {
+  animation-delay: 1s;
+}
+.t6 {
+  animation-delay: 600ms;
+}
+.t7 {
+  animation-delay: 850ms;
+}
+.t8 {
+  animation-delay: 400ms;
+}
+.t9 {
+  animation-delay: 450ms;
+}
+.t10 {
+  animation-delay: 250ms;
+}
+.t11 {
+  animation-delay: 650ms;
 }

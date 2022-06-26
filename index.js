@@ -1,3 +1,17 @@
+const scaleFactor = 1 / 40;
+function moveBackground(event) {
+  const shapes = document.querySelectorAll(".shape"); //calling all shapes classes
+  const x = event.clientX * scaleFactor; //the x cords of the mouse divided by 25
+  const y = event.clientY * scaleFactor; // the y cords of the mouse divided by 25
+  //(note: the x and y are divided by 25 so that the shapes only move 25% of the mouses' movement)
+
+  for (let i = 0; i < shapes.length; i++) {
+    const isOdd = i%2!==0;
+    const boolInt = isOdd ? -1:1;
+    shapes[i].style.transform = `translate(${x*boolInt}px, ${y*boolInt}px) rotate(${x*boolInt*5}deg`; //for each shape, the shaoes move each pixel with the mouse
+  }
+}
+
 let contrastToggle = false;
 function toggleContrast() {
   contrastToggle = !contrastToggle;
