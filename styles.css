@@ -63,6 +63,10 @@ input:focus,
 textarea:focus {
   border-color: rgb(29, 205, 205);
 }
+input:hover,
+textarea:hover {
+  border-color: rgb(144, 187, 187);
+}
 /*
 Navigation
 */
@@ -206,6 +210,7 @@ Header
 }
 .icon-click {
   transition: all 150ms ease-in-out;
+  cursor: pointer;
 }
 .icon-click:hover {
   transform: scale(1.15);
@@ -289,6 +294,7 @@ Modal
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 .modal-title {
   font-size: 28px;
@@ -364,6 +370,46 @@ Modal
   border-color: rgb(29, 205, 205);
   color: rgb(29, 205, 205);
 }
+.overlay {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.modal-loading {
+  background-color: #242424;
+  font-size: 120px;
+}
+.fa-spinner {
+  animation: spin 700ms infinite linear;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.modal-success {
+  font-size: 40px;
+  text-align: center;
+  background-color: #4bb543;
+  font-weight: bold;
+  padding: 30px;
+}
+.fa-times {
+  position: absolute;
+  right: 40px;
+  top: 30px;
+  font-size: 36px;
+  z-index: 100;
+}
+
 /*
 Projects
 */
