@@ -28,7 +28,7 @@ h1 {
 }
 .row {
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -306,6 +306,7 @@ Header
   position: absolute;
   bottom: 32px;
   right: 40px;
+  z-index: 100;
 }
 
 .fa-envelope {
@@ -548,6 +549,7 @@ Projects
 }
 .project {
   padding: 60px 0;
+  margin: 24px;
 }
 .project:hover .project-wrapper:before {
   opacity: 0.7;
@@ -756,4 +758,110 @@ shapes
 }
 .t11 {
   animation-delay: 650ms;
+}
+@media (max-width: 786px) {
+  .header-title {
+    font-size: 80px;
+  }
+  .header-description {
+    font-size: 20px;
+    width: 100%;
+  }
+  .header-details {
+    margin-right: 20px;
+  }
+  .logo-nav-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  nav {
+    height: 80px;
+  }
+  #logo-nav {
+    width: 80px;
+    height: 80px;
+  }
+  .header-links {
+    justify-content: space-around;
+  }
+  .header-link {
+    width: 35px;
+    height: 35px;
+  }
+  .header-link-anchor {
+    font-size: 20px;
+  }
+  .scroll {
+    left: 45%;
+  }
+  .mail-button {
+    width: 70px;
+    height: 70px;
+  }
+  h1{
+    font-size: 30px;
+  }
+  .project{
+    padding: 30px 0;
+  }
+  .project-description{
+  }
+  h3{
+    font-size: 24px;
+  }
+  .project-description-p{
+    font-size: 14px;
+  }
+
+  .footer-logo{
+    width: 80px;
+    height: 80px;
+  }
+  .footer-logo-top{
+    top: 32px;
+  }
+  .footer-link{
+    font-size: 14px;
+  }
+  .footer-p{
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 55px;
+  }
+  .header-description {
+    font-size: 16px;
+  }
+  nav {
+    height: 60px;
+  }
+  #logo-nav {
+    width: 60px;
+    height: 60px;
+  }
+  .scroll {
+    left: 42.5%;
+  }
+  .scroll-icon {
+    font-size: 20px;
+  }
+  .project-description{
+    left: 12px;
+    padding-right: 12px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  h4{
+    font-size: 14px;
+  }
+  .project-description-p{
+    font-size: 12px;
+    margin: 8px 0;
+  }
+  .project-description-link{
+    font-size: 16px;
+  }
 }
