@@ -303,7 +303,7 @@ Header
   border-radius: 50%;
   border: none;
   background-color: #242424;
-  position: absolute;
+  position: fixed;
   bottom: 32px;
   right: 40px;
   z-index: 100;
@@ -523,6 +523,7 @@ Projects
 }
 .project-title {
   text-align: center;
+  z-index: 1;
 }
 .project-img {
   width: 100%;
@@ -793,6 +794,7 @@ shapes
   }
   .scroll {
     left: 45%;
+    z-index: 1;
   }
   .mail-button {
     width: 70px;
@@ -848,6 +850,18 @@ shapes
   #logo-nav {
     width: 60px;
     height: 60px;
+  }
+  .fa-adjust {
+    font-size: 24px;
+  }
+  .nav-link-anchor {
+    font-size: 16px;
+  }
+  .nav-link {
+    margin: 0 6px;
+  }
+  #logo-nav {
+    margin: 0;
   }
   .scroll {
     left: 42.5%;
@@ -911,12 +925,12 @@ shapes
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
   }
   .mail {
     font-size: 30px;
-
-    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   input,
   textarea {
