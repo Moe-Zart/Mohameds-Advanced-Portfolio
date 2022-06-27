@@ -907,12 +907,14 @@ shapes
   .mail-button{
     width: 50px;
     height: 50px;
-  }
-  .mail{
-    font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .mail{
+    font-size: 30px;
+    
+    width: 65%;
   }
   input, textarea{
     height: 28px;
