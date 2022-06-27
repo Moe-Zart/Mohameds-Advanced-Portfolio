@@ -372,7 +372,7 @@ Modal
 */
 .modal-half {
   width: 50%;
-  padding: 40px 72px;
+  padding: 40px 48px;
 }
 .left {
   background-color: #e5e5e5;
@@ -798,6 +798,14 @@ shapes
     width: 70px;
     height: 70px;
   }
+  .modal{
+    flex-direction: column;
+    height: calc(100vh - 250px);
+  }
+  .modal-half{
+    width: 100%;
+    height: 50%;
+  }
   h1{
     font-size: 30px;
   }
@@ -847,6 +855,38 @@ shapes
   .scroll-icon {
     font-size: 20px;
   }
+  .modal{
+    top: 45vh;
+    height: calc(100vh - 140px);
+  }
+  .modal-left-p{
+    font-size: 12px;
+  }
+  .modal-subtitle{
+    margin: none;
+  }
+  .right{
+    position: none;
+  }
+  .fa-times{
+    top: -38vh;
+    color: #242424;
+  }
+  .modal-half{
+    padding: 20px 20px;
+  }
+  .modal-title{
+    font-size: 20px;
+  }
+  .modal-subtitle{
+    font-size: 14px;
+  }
+  .left{
+    justify-content: space-evenly;
+  }
+  .languages-list{
+    margin-top: 8px;
+  }
   .project-description{
     left: 12px;
     padding-right: 12px;
@@ -863,5 +903,25 @@ shapes
   }
   .project-description-link{
     font-size: 16px;
+  }
+  .mail-button{
+    width: 50px;
+    height: 50px;
+  }
+  .mail{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  input, textarea{
+    height: 28px;
+  }
+  .form-item{
+    margin-bottom: 8px;
+  }
+  .form-submit{
+    font-size: 14px;
+    max-width: 150px;
   }
 }
