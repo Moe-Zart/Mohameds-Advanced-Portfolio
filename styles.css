@@ -798,40 +798,40 @@ shapes
     width: 70px;
     height: 70px;
   }
-  .modal{
+  .modal {
     flex-direction: column;
     height: calc(100vh - 250px);
   }
-  .modal-half{
+  .modal-half {
     width: 100%;
     height: 50%;
   }
-  h1{
+  h1 {
     font-size: 30px;
   }
-  .project{
+  .project {
     padding: 30px 0;
   }
-  .project-description{
+  .project-description {
   }
-  h3{
+  h3 {
     font-size: 24px;
   }
-  .project-description-p{
+  .project-description-p {
     font-size: 14px;
   }
 
-  .footer-logo{
+  .footer-logo {
     width: 80px;
     height: 80px;
   }
-  .footer-logo-top{
+  .footer-logo-top {
     top: 32px;
   }
-  .footer-link{
+  .footer-link {
     font-size: 14px;
   }
-  .footer-p{
+  .footer-p {
     font-size: 12px;
   }
 }
@@ -855,75 +855,85 @@ shapes
   .scroll-icon {
     font-size: 20px;
   }
-  .modal{
+  .modal {
     top: 45vh;
     height: calc(100vh - 140px);
   }
-  .modal-left-p{
+  .modal-left-p {
     font-size: 12px;
   }
-  .modal-subtitle{
+  .modal-subtitle {
     margin: none;
   }
-  .right{
+  .right {
     position: none;
   }
-  .fa-times{
+  .fa-times {
     top: -38vh;
     color: #242424;
   }
-  .modal-half{
+  .modal-half {
     padding: 20px 20px;
   }
-  .modal-title{
+  .modal-title {
     font-size: 20px;
   }
-  .modal-subtitle{
+  .modal-subtitle {
     font-size: 14px;
+    margin: 8px 0 8px;
   }
-  .left{
+  .left {
     justify-content: space-evenly;
   }
-  .languages-list{
+  .languages-list {
     margin-top: 8px;
   }
-  .project-description{
+  .project-description {
     left: 12px;
     padding-right: 12px;
   }
-  h3{
+  h3 {
     font-size: 20px;
   }
-  h4{
+  h4 {
     font-size: 14px;
   }
-  .project-description-p{
+  .project-description-p {
     font-size: 12px;
     margin: 8px 0;
   }
-  .project-description-link{
+  .project-description-link {
     font-size: 16px;
   }
-  .mail-button{
+  .mail-button {
     width: 50px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
   }
-  .mail{
+  .mail {
     font-size: 30px;
-    
+
     width: 65%;
   }
-  input, textarea{
+  input,
+  textarea {
     height: 28px;
   }
-  .form-item{
+  .form-item-label {
+    font-size: 8px;
+  }
+  .form-item {
     margin-bottom: 8px;
   }
-  .form-submit{
+  .form-submit {
     font-size: 14px;
-    max-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 140px;
+    max-height: 36px;
   }
 }
