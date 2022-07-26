@@ -1,4 +1,4 @@
-const scaleFactor = 1 / 40;
+const scaleFactor = 1 / 20;
 function moveBackground(event) {
   const shapes = document.querySelectorAll(".shape"); //calling all shapes classes
   const x = event.clientX * scaleFactor; //the x cords of the mouse divided by 25
