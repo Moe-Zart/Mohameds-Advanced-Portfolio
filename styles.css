@@ -861,7 +861,8 @@ shapes
 }
 @media (max-width: 480px) {
   .header-title {
-    font-size: 55px;
+    font-size: 48px;
+    margin-top: 12px;
   }
   .header-description {
     font-size: 16px;
